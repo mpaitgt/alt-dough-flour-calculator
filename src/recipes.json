@@ -1,0 +1,106 @@
+{
+  "flours": [
+    {
+      "recipe": "Mock Better Batter Flour Blend",
+      "key": 1,
+      "ingredients": [
+        {
+          "name": "brown rice flour",
+          "percentage": 30
+        },
+        {
+          "name": "white rice flour",
+          "percentage": 30
+        },
+        {
+          "name": "tapioca starch",
+          "percentage": 15
+        },
+        {
+          "name": "potato starch",
+          "percentage": 15
+        },
+        {
+          "name": "potato flour",
+          "percentage": 5
+        },
+        {
+          "name": "xanthan gum",
+          "percentage": 3
+        },
+        {
+          "name": "pectin",
+          "percentage": 2
+        }
+      ]
+    },
+    {
+      "recipe": "Mock Cup4Cup Flour Blend",
+      "key": 2,
+      "ingredients": [
+        {
+          "name": "white rice flour",
+          "percentage": 31
+        },
+        {
+          "name": "cornstarch",
+          "percentage": 25
+        },
+        {
+          "name": "tapioca starch",
+          "percentage": 15
+        },
+        {
+          "name": "brown rice flour",
+          "percentage": 14
+        },
+        {
+          "name": "nonfat dry milk",
+          "percentage": 10
+        },
+        {
+          "name": "potato starch",
+          "percentage": 3
+        },
+        {
+          "name": "xanthan gum",
+          "percentage": 2
+        }
+      ]
+    },
+    {
+      "recipe": "Better Than Cup4Cup Flour Blend",
+      "key": 3,
+      "ingredients": [
+        {
+          "name": "white rice flour",
+          "percentage": 31
+        },
+        {
+          "name": "cornstarch",
+          "percentage": 18
+        },
+        {
+          "name": "brown rice flour",
+          "percentage": 17
+        },
+        {
+          "name": "tapioca starch",
+          "percentage": 15
+        },
+        {
+          "name": "nonfat dry milk",
+          "percentage": 14
+        },
+        {
+          "name": "potato starch",
+          "percentage": 3
+        },
+        {
+          "name": "xanthan gum",
+          "percentage": 2
+        }
+      ]
+    }
+  ]
+}
