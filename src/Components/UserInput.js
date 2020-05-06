@@ -11,15 +11,6 @@ const Input = styled.input`
   color: inherit;
   border: none;
   cursor: pointer;
-  &::after {
-    content: 'g';
-  }
-  &:hover {
-    color: var(--purple);
-  }
-  &:focus {
-    color: var(--purple);
-  }
 `;
 
 function UserInput({ input, setInput }) {

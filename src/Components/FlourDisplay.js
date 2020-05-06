@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {Table, TR, TD, TH} from './TableElements';
+import React from 'react';
+import {Table, TR, TD, TH} from '../Components/TableElements';
 
-function Blend({ blend, input }) {
+function FlourDisplay({ blend, input }) {
 
   const calculateAmt = (inp, pct) => {
     let num = inp * (pct / 100);
@@ -59,4 +59,4 @@ function Blend({ blend, input }) {
   )
 }
 
-export default Blend;
+export default FlourDisplay;

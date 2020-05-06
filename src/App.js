@@ -1,39 +1,23 @@
 import React, { useState } from 'react';
 import Nav from './Components/Nav';
-import UserInput from './Components/UserInput';
-import Blend from './Components/Blend';
-import logo from '../src/Images/altdough15.jpg';
-import recipes from './recipes.json';
-import styled from 'styled-components';
+// import UserInput from './Components/UserInput';
+import Home from './Pages/Home';
+import Flours from './Pages/Flours';
+import Recipes from './Pages/Recipes';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-const MenuBar = styled.div`
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  margin: 20px auto 50px auto;
-`;
 
 function App() {
-  const [input, setInput] = useState(240);
-  const [blend, setBlend] = useState(recipes.flours[0]);
-
-  const selectBlend = e => {
-    const { textContent } = e.target;
-    setBlend(
-      recipes.flours.find(blend => blend.recipe === textContent)
-    );
-  }
-
   return (
     <div>
-      <MenuBar>
-        <Nav recipes={recipes} selectBlend={selectBlend} />
-        <img src={logo} alt="alternative-dough-logo" width="180" />
-        <UserInput input={input} setInput={e => setInput(e.target.value)} />
-      </MenuBar>
-      <Blend blend={blend} input={input} />
+      <Router>
+        <Nav />
+        <Switch>
+          <Route exact path='/flour-calculator' component={Flours}></Route>
+          <Route exact path='/recipes' component={Recipes}></Route>
+          <Route exact path='/' component={Home}></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

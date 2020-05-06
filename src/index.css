@@ -4,14 +4,17 @@
   --green: #a2ceaa;
   --purple: #644aa1;
   --gold: #d8bf7c;
+  --white: #f1f1f1;
+  --offwhite: rgb(255, 249, 232);
+  --darkgray: rgb(49, 49, 49);
 }
 
 body {
   font-family: 'Chewy', cursive;
   font-size: 20px;
-  background: var(--green);
-  color: white;
-  width: 90%;
+  background: var(--offwhite);
+  color: var(--darkgray);
+  /* width: 90%; */
   margin: 0 auto;
   text-align: center;
   -webkit-font-smoothing: antialiased;

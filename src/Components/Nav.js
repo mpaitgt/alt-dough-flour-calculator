@@ -1,17 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
+import logo from '../Images/altdough15.jpg';
+
+const style = {
+  link: {
+    textDecoration: 'none',
+    color: 'var(--offwhite)'
+  }
+}
+
+const Navbar = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  background: var(--green);
+  box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.2);
+`;
 
 const List = styled.ul`
   list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 const NavItem = styled.li`
+  color: inherit;
+  text-decoration: none;
   margin: 5px 0px;
   cursor: pointer;
   transition: 0.25s;
+  font-size: 32px;
+  padding: 0px 40px;
   &:hover {
     color: var(--purple);
     transition: 0.25s;
@@ -19,20 +40,28 @@ const NavItem = styled.li`
   }
 `;
 
+const Logo = styled.img`
+  // position: absolute;
+  // top: 0;
+  border-radius: 50%;
+  width: 100px;
+`;
+
 function Nav({ recipes, selectBlend }) {
   return (
-    <div>
-      <h2>Select a Flour:</h2>
+    <Navbar>
       <List>
-        {recipes.flours.map(blend => {
-          return (
-            <NavItem key={blend.key} onClick={selectBlend}>
-              {blend.recipe}
-            </NavItem>
-          )
-        })}
+        <Link to="/flour-calculator" style={style.link}>
+          <NavItem>Flours</NavItem>
+        </Link>
+        <Link to="/">
+          <Logo src={logo} alt="alternative-dough-logo" />
+        </Link>
+        <Link to="/recipes" style={style.link}>
+          <NavItem>Recipes</NavItem>
+        </Link>
       </List>
-    </div>
+    </Navbar>
   )
 }
 
