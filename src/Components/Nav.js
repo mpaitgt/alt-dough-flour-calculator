@@ -13,6 +13,7 @@ const style = {
 const Navbar = styled.div`
   width: 100%;
   margin: 0 auto;
+  padding-top: 32px;
   background: var(--green);
   box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.2);
 `;
@@ -22,7 +23,7 @@ const List = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 const NavItem = styled.li`
@@ -41,16 +42,20 @@ const NavItem = styled.li`
 `;
 
 const Logo = styled.img`
-  // position: absolute;
-  // top: 0;
+  position: absolute;
+  top: 0;
+  right: 50px;
   border-radius: 50%;
-  width: 100px;
+  width: 160px;
 `;
 
 function Nav({ recipes, selectBlend }) {
   return (
     <Navbar>
       <List>
+        <Link to="/" style={style.link}>
+          <NavItem>Home</NavItem>
+        </Link>
         <Link to="/flour-calculator" style={style.link}>
           <NavItem>Flours</NavItem>
         </Link>
