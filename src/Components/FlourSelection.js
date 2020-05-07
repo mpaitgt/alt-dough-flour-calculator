@@ -21,12 +21,12 @@ const NavItem = styled.li`
   }
 `;
 
-function FlourSelection({ recipes, selectBlend }) {
+function FlourSelection({ flours, selectBlend }) {
   return (
     <div>
       <h2>Select a Flour:</h2>
       <List>
-        {recipes.flours.map(blend => {
+        {flours.flours.map(blend => {
           return (
             <NavItem key={blend.key} onClick={selectBlend}>
               {blend.recipe}

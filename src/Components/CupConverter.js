@@ -19,7 +19,6 @@ const Input = styled.input`
 
 function CupConverter() {
   const [cup, setCup] = useState(1);
-  const [grams, setGrams] = useState(122);
 
   const calculateGrams = () => {
     return cup * 122;

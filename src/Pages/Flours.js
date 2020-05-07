@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import recipes from '../recipes.json';
+import flours from '../flours.json';
 import styled from 'styled-components';
 import FlourSelection from '../Components/FlourSelection';
 import UserInput from '../Components/UserInput';
@@ -35,20 +35,21 @@ const ItemThree = styled.div`
 
 function Flours() {
   const [input, setInput] = useState(240);
-  const [blend, setBlend] = useState(recipes.flours[0]);
+  const [blend, setBlend] = useState(flours.flours[0]);
 
   const selectBlend = e => {
     const { textContent } = e.target;
     setBlend(
-      recipes.flours.find(blend => blend.recipe === textContent)
+      flours.flours.find(blend => blend.recipe === textContent)
     );
   }
 
   return (
     <Container>
+      <h1>Flours</h1>
       <Div>
         <ItemOne>
-          <FlourSelection recipes={recipes} selectBlend={selectBlend} />
+          <FlourSelection flours={flours} selectBlend={selectBlend} />
         </ItemOne>
         <ItemTwo>
           <UserInput input={input} setInput={e => setInput(e.target.value)} />

@@ -1,156 +1,286 @@
 {
-  "flours": [
+  "data": [
     {
-      "recipe": "Mock Better Batter Flour Blend",
-      "key": 1,
+      "label": "Gluten-Free Yeast-Raised Donuts",
+      "id": 1001,
+      "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/6/19/1/FN_Gluten-Free-Sugar-Glazed-Doughnuts_s4x3.jpg.rend.hgtvcom.826.620.suffix/1403627915220.jpeg",
       "ingredients": [
         {
-          "name": "brown rice flour",
-          "percentage": 30
+          "text": "all-purpose gluten-free flour",
+          "amount": 350,
+          "measurement": "grams",
+          "alt": "2 1/2 cups",
+          "note": "plus more for sprinkling"
         },
         {
-          "name": "white rice flour",
-          "percentage": 30
+          "text": "xanthan gum",
+          "amount": 1.5,
+          "measurement": "tsp",
+          "alt": null,
+          "note": "omit if your blend already contains it"
         },
         {
-          "name": "tapioca starch",
-          "percentage": 15
+          "text": "kosher salt",
+          "amount": 0.5,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "potato starch",
-          "percentage": 15
+          "text": "cream of tartar",
+          "amount": 0.25,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "potato flour",
-          "percentage": 5
+          "text": "baking soda",
+          "amount": 0.25,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "xanthan gum",
-          "percentage": 3
+          "text": "granulated sugar",
+          "amount": 50,
+          "measurement": "grams",
+          "alt": "1/4 cup",
+          "note": null
         },
         {
-          "name": "pectin",
-          "percentage": 2
+          "text": "instant yeast",
+          "amount": 8,
+          "measurement": "grams",
+          "alt": "2 1/2 tsp",
+          "note": null
+        },
+        {
+          "text": "finely-ground nutmeg",
+          "amount": 0.5,
+          "measurement": "tsp",
+          "alt": "2 1/2 tsp",
+          "note": null
+        },
+        {
+          "text": "egg",
+          "amount": 1,
+          "measurement": "egg",
+          "alt": null,
+          "note": null
+        },
+        {
+          "text": "egg white",
+          "amount": 1,
+          "measurement": "egg white",
+          "alt": null,
+          "note": null
+        },
+        {
+          "text": "milk",
+          "amount": 9,
+          "measurement": "fluid oz",
+          "alt": "1 cup + 2 T",
+          "note": "at room temperature"
+        },
+        {
+          "text": "unsalted butter",
+          "amount": 56,
+          "measurement": "grams",
+          "alt": "4 T",
+          "note": "melted and cooled"
         }
-      ]
+      ],
+      "prep_time": "60 minutes",
+      "cook_type": "fried",
+      "yield": 16
     },
     {
-      "recipe": "Mock Cup4Cup Flour Blend",
-      "key": 2,
+      "label": "Gluten-Free Sour Cream Donuts",
+      "id": 1002,
+      "image": "https://simplygluten-free.com/wp-content/uploads/2017/02/sourdough-donuts-glutenfree.png",
       "ingredients": [
         {
-          "name": "white rice flour",
-          "percentage": 31
+          "text": "all-purpose gluten-free flour",
+          "amount": 350,
+          "measurement": "grams",
+          "alt": "2 1/2 cups",
+          "note": "plus more for sprinkling"
         },
         {
-          "name": "cornstarch",
-          "percentage": 25
+          "text": "xanthan gum",
+          "amount": 1.5,
+          "measurement": "tsp",
+          "alt": null,
+          "note": "omit if your blend already contains it"
         },
         {
-          "name": "tapioca starch",
-          "percentage": 15
+          "text": "kosher salt",
+          "amount": 0.5,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "brown rice flour",
-          "percentage": 14
+          "text": "cream of tartar",
+          "amount": 0.25,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "nonfat dry milk",
-          "percentage": 10
+          "text": "baking soda",
+          "amount": 0.25,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "potato starch",
-          "percentage": 3
+          "text": "granulated sugar",
+          "amount": 50,
+          "measurement": "grams",
+          "alt": "1/4 cup",
+          "note": null
         },
         {
-          "name": "xanthan gum",
-          "percentage": 2
+          "text": "instant yeast",
+          "amount": 8,
+          "measurement": "grams",
+          "alt": "2 1/2 tsp",
+          "note": null
+        },
+        {
+          "text": "finely-ground nutmeg",
+          "amount": 0.5,
+          "measurement": "tsp",
+          "alt": "2 1/2 tsp",
+          "note": null
+        },
+        {
+          "text": "egg",
+          "amount": 1,
+          "measurement": "egg",
+          "alt": null,
+          "note": null
+        },
+        {
+          "text": "egg white",
+          "amount": 1,
+          "measurement": "egg white",
+          "alt": null,
+          "note": null
+        },
+        {
+          "text": "milk",
+          "amount": 9,
+          "measurement": "fluid oz",
+          "alt": "1 cup + 2 T",
+          "note": "at room temperature"
+        },
+        {
+          "text": "unsalted butter",
+          "amount": 56,
+          "measurement": "grams",
+          "alt": "4 T",
+          "note": "melted and cooled"
         }
-      ]
+      ],
+      "prep_time": "40 minutes",
+      "cook_type": "fried",
+      "yield": 18
     },
     {
-      "recipe": "Better Than Cup4Cup Flour Blend",
-      "key": 3,
+      "label": "Gluten-Free Pancakes",
+      "id": 1003,
+      "image": "https://www.kingarthurflour.com/sites/default/files/recipe_legacy/5043-3-large.jpg",
       "ingredients": [
         {
-          "name": "white rice flour",
-          "percentage": 31
+          "text": "all-purpose gluten-free flour",
+          "amount": 350,
+          "measurement": "grams",
+          "alt": "2 1/2 cups",
+          "note": "plus more for sprinkling"
         },
         {
-          "name": "cornstarch",
-          "percentage": 18
+          "text": "xanthan gum",
+          "amount": 1.5,
+          "measurement": "tsp",
+          "alt": null,
+          "note": "omit if your blend already contains it"
         },
         {
-          "name": "brown rice flour",
-          "percentage": 17
+          "text": "kosher salt",
+          "amount": 0.5,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "tapioca starch",
-          "percentage": 15
+          "text": "cream of tartar",
+          "amount": 0.25,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "nonfat dry milk",
-          "percentage": 14
+          "text": "baking soda",
+          "amount": 0.25,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         },
         {
-          "name": "potato starch",
-          "percentage": 3
+          "text": "granulated sugar",
+          "amount": 50,
+          "measurement": "grams",
+          "alt": "1/4 cup",
+          "note": null
         },
         {
-          "name": "xanthan gum",
-          "percentage": 2
+          "text": "instant yeast",
+          "amount": 8,
+          "measurement": "grams",
+          "alt": "2 1/2 tsp",
+          "note": null
+        },
+        {
+          "text": "finely-ground nutmeg",
+          "amount": 0.5,
+          "measurement": "tsp",
+          "alt": "2 1/2 tsp",
+          "note": null
+        },
+        {
+          "text": "egg",
+          "amount": 1,
+          "measurement": "egg",
+          "alt": null,
+          "note": null
+        },
+        {
+          "text": "egg white",
+          "amount": 1,
+          "measurement": "egg white",
+          "alt": null,
+          "note": null
+        },
+        {
+          "text": "milk",
+          "amount": 9,
+          "measurement": "fluid oz",
+          "alt": "1 cup + 2 T",
+          "note": "at room temperature"
+        },
+        {
+          "text": "unsalted butter",
+          "amount": 56,
+          "measurement": "grams",
+          "alt": "4 T",
+          "note": "melted and cooled"
         }
-      ]
-    },
-    {
-      "recipe": "Basic Gluten Free Flour",
-      "key": 4,
-      "ingredients": [
-        {
-          "name": "white rice flour",
-          "percentage": 66
-        },
-        {
-          "name": "potato starch",
-          "percentage": 22
-        },
-        {
-          "name": "cornstarch",
-          "percentage": 12
-        }
-      ]
-    },
-    {
-      "recipe": "Gluten Free Bread Flour",
-      "key": 5,
-      "ingredients": [
-        {
-          "name": "gluten free flour",
-          "percentage": 71
-        },
-        {
-          "name": "whey protein isolate",
-          "percentage": 18
-        },
-        {
-          "name": "Expandex modified tapioca starch",
-          "percentage": 11
-        }
-      ]
-    },
-    {
-      "recipe": "Gluten Free Cake Flour",
-      "key": 6,
-      "ingredients": [
-        {
-          "name": "gluten free flour",
-          "percentage": 82
-        },
-        {
-          "name": "cornstarch",
-          "percentage": 18
-        }
-      ]
+      ],
+      "prep_time": "60 minutes",
+      "cook_type": "stove-top",
+      "yield": 12
     }
   ]
 }

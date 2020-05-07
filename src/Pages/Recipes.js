@@ -1,30 +1,29 @@
-import React, {useState} from 'react';
-import {keys} from '../hidden-keys';
+import React, {useState, useEffect} from 'react';
+import EdamamItem from '../Components/EdamamItem';
+import Container from '../Components/Container';
+import recipes from '../recipes.json';
+import styled from 'styled-components';
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+`;
 
 function Recipes() {
-  const [hits, setHits] = useState([]);
-  const { edamam_api_key, edamam_app_id } = keys;
-  const url = `https://api.edamam.com/search?q=cookies&app_id=${edamam_app_id}&app_key=${edamam_api_key}`;
-
-  fetch(url)
-    .then(res => res.json())
-    .then(data => setHits([...data.hits]));
 
   return (
-    <div>
+    <Container>
       <h1>Recipes</h1>
-      { 
-        hits.length > 0
-        ?
-        hits.map(item => {
-          return (
-            <p>{item.recipe.label}</p>
-          )
-        })
-        :
-        null
-      }
-    </div>
+      <Grid>
+        { 
+          recipes.data.map(recipe => {
+            return (
+              <EdamamItem recipe={recipe} />
+            )
+          })
+        }
+      </Grid>
+    </Container>
     
     
   )
