@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 const Item = styled.div`
@@ -47,26 +48,28 @@ const Item = styled.div`
 
 function EdamamItem({ recipe }) {
   return (
-    <Item>
-      <img src={recipe.image} alt={recipe.label} />
-      <div>
-        <h4>{recipe.label}</h4>
+    <Link to={`/recipes/${recipe.id}`}>
+      <Item>
+        <img src={recipe.image} alt={recipe.label} />
         <div>
-          <p>
-            <span>Yield:</span>
-            <strong>{recipe.yield}</strong>
-          </p>
-          <p>
-            <span>Prep time:</span>
-            <strong>{recipe.prep_time}</strong>
-          </p>
-          <p>
-            <span>Cook type:</span>
-            <strong>{recipe.cook_type.charAt(0).toUpperCase() + recipe.cook_type.slice(1)}</strong>
-          </p>
+          <h4>{recipe.label}</h4>
+          <div>
+            <p>
+              <span>Yield:</span>
+              <strong>{recipe.yield}</strong>
+            </p>
+            <p>
+              <span>Prep time:</span>
+              <strong>{recipe.prep_time}</strong>
+            </p>
+            <p>
+              <span>Cook type:</span>
+              <strong>{recipe.cook_type.charAt(0).toUpperCase() + recipe.cook_type.slice(1)}</strong>
+            </p>
+          </div>
         </div>
-      </div>
-    </Item>
+      </Item>
+    </Link>
   )
 }
 

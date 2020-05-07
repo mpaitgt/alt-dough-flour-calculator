@@ -47,6 +47,8 @@ const Logo = styled.img`
   right: 50px;
   border-radius: 50%;
   width: 160px;
+  box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.2);
+  z-index: 999;
 `;
 
 function Nav({ recipes, selectBlend }) {
