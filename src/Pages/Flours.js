@@ -9,24 +9,28 @@ import Container from '../Components/Container';
 const Div = styled.div`
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr 1fr;
-  align-items: start;
-  justify-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 0 auto;
 `;
 
 const ItemOne = styled.div`
   grid-column: 1/2;
   grid-row: 1/3;
+  align-self: center;
 `;
 
 const ItemTwo = styled.div`
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 3/5;
+  align-self: center;
 `;
 
 const ItemThree = styled.div`
   grid-column: 2/3;
-  grid-row: 1/3;
+  grid-row: 1/5;
+  align-self: start;
+  justify-self: start;
 `;
 
 function Flours() {

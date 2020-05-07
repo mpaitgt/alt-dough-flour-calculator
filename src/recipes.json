@@ -101,6 +101,56 @@
           "percentage": 2
         }
       ]
+    },
+    {
+      "recipe": "Basic Gluten Free Flour",
+      "key": 4,
+      "ingredients": [
+        {
+          "name": "white rice flour",
+          "percentage": 66
+        },
+        {
+          "name": "potato starch",
+          "percentage": 22
+        },
+        {
+          "name": "cornstarch",
+          "percentage": 12
+        }
+      ]
+    },
+    {
+      "recipe": "Gluten Free Bread Flour",
+      "key": 5,
+      "ingredients": [
+        {
+          "name": "gluten free flour",
+          "percentage": 71
+        },
+        {
+          "name": "whey protein isolate",
+          "percentage": 18
+        },
+        {
+          "name": "Expandex modified tapioca starch",
+          "percentage": 11
+        }
+      ]
+    },
+    {
+      "recipe": "Gluten Free Cake Flour",
+      "key": 6,
+      "ingredients": [
+        {
+          "name": "gluten free flour",
+          "percentage": 82
+        },
+        {
+          "name": "cornstarch",
+          "percentage": 18
+        }
+      ]
     }
   ]
 }

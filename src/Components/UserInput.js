@@ -1,4 +1,5 @@
 import React from 'react';
+import CupConverter from '../Components/CupConverter';
 import styled from 'styled-components';
 
 const Input = styled.input`
@@ -19,6 +20,7 @@ function UserInput({ input, setInput }) {
       <h2>How much?</h2>
       <Input type="text" value={input} onChange={setInput}/>
       <span>g</span>
+      <CupConverter />
     </div>
   )
 }

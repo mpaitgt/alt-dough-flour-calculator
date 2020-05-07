@@ -7,10 +7,11 @@
   --white: #f1f1f1;
   --offwhite: rgb(255, 249, 232);
   --darkgray: rgb(49, 49, 49);
+  /* border: 1px solid black; */
 }
 
 body {
-  font-family: 'Chewy', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
   background: var(--offwhite);
   color: var(--darkgray);
@@ -19,6 +20,11 @@ body {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, a, th {
+  font-family: 'Chewy', cursive;
+  color: var(--purple);
 }
 
 code {
