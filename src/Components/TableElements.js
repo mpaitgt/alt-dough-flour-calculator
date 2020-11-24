@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 
 function Table({ children }) {
@@ -7,7 +7,7 @@ function Table({ children }) {
     width: 100%;
     margin: 0 auto;
     border-collapse:collapse;
-    
+    height: 100%;
   `;
   return <TABLE>{children}</TABLE>;
 }
@@ -18,21 +18,20 @@ function TH({ children }) {
     background: var(--green);
     color: var(--offwhite);
     border: 5px solid var(--green); 
-    padding: 5px 10px;
   `;
   return <HEADER>{children}</HEADER>
 }
 
 function TR({ children }) {
   const ROW = styled.tr`
-    
+    color: var(--purple);
     border: none;
-    &:nth-child(2n) {
+    border-bottom: 1px solid var(--green);
+    &:nth-child(even) {
+      background: var(--offwhite);
     }
-    &:last-child {
-      background: var(--green);
-      font-weight: 900;
-      color: var(--offwhite);
+    &:nth-child(odd) {
+      background: var(--offwhite2);
     }
   `;
   return <ROW>{children}</ROW>;
@@ -40,10 +39,24 @@ function TR({ children }) {
 
 function TD({ children }) {
   const DATA = styled.td`
-    padding: 10px 40px 10px 20px;
-    font-size: 24px;
+    font-family: 'Chewy', cursive;
+    font-size: 32px;
+    color: var(--purple);
+    text-align: left;
+    padding: 10px 0;
   `;
   return <DATA>{children}</DATA>;
 }
 
-export { Table, TR, TD, TH };
+function Amount({ children }) {
+  const DATA = styled.td`
+    font-family: 'Chewy', cursive;
+    font-size: 32px;
+    color: var(--purple);
+    text-align: right;
+    padding-right: 2rem;
+  `;
+  return <DATA>{children}</DATA>;
+}
+
+export { Table, TR, TD, TH, Amount };

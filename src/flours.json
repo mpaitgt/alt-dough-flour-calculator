@@ -1,7 +1,7 @@
 {
   "flours": [
     {
-      "recipe": "Mock Better Batter Flour Blend",
+      "recipe": "Cookie Flour",
       "key": 1,
       "ingredients": [
         {
@@ -35,8 +35,9 @@
       ]
     },
     {
-      "recipe": "Mock Cup4Cup Flour Blend",
+      "recipe": "Pastry Flour",
       "key": 2,
+      "description": "",
       "ingredients": [
         {
           "name": "white rice flour",
@@ -69,7 +70,7 @@
       ]
     },
     {
-      "recipe": "Better Than Cup4Cup Flour Blend",
+      "recipe": "All Purpose Flour",
       "key": 3,
       "ingredients": [
         {
@@ -103,8 +104,9 @@
       ]
     },
     {
-      "recipe": "Basic Gluten Free Flour",
+      "recipe": "Basic Flour",
       "key": 4,
+      "description": "Good for pancakes",
       "ingredients": [
         {
           "name": "white rice flour",
@@ -121,11 +123,11 @@
       ]
     },
     {
-      "recipe": "Gluten Free Bread Flour",
+      "recipe": "Bread Flour",
       "key": 5,
       "ingredients": [
         {
-          "name": "gluten free flour",
+          "name": "all purpose flour",
           "percentage": 71
         },
         {
@@ -139,11 +141,11 @@
       ]
     },
     {
-      "recipe": "Gluten Free Cake Flour",
+      "recipe": "Cake Flour",
       "key": 6,
       "ingredients": [
         {
-          "name": "gluten free flour",
+          "name": "all purpose flour",
           "percentage": 82
         },
         {

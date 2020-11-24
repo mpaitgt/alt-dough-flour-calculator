@@ -1,7 +1,7 @@
 import React from 'react';
-import {Table, TR, TD, TH} from '../Components/TableElements';
+import {Table, TR, TD, TH, Amount} from './TableElements';
 
-function FlourDisplay({ blend, input }) {
+function Ingredients({ blend, input }) {
 
   const calculateAmt = (inp, pct) => {
     let num = inp * (pct / 100);
@@ -33,33 +33,22 @@ function FlourDisplay({ blend, input }) {
 
   return (
     <div>
-      <h1>{blend.recipe}</h1>
       <Table>
         <tbody>
-          <tr>
-            <TH>Amount</TH>
-            <TH>Weight</TH>
-            <TH>Ingredient</TH>
-          </tr>
-          {blend.ingredients.map(ingredient => {
+          {blend.ingredients.map((ingredient, index) => {
             const { percentage, name } = ingredient;
             return (
-              <TR>
-                <TD>{calculateAmt(input, percentage)} g</TD>
-                <TD>{percentage} %</TD>
+              <TR key={index}>
+                <Amount>{calculateAmt(input, percentage)} g</Amount>
+                {/* <TD>{percentage} %</TD> */}
                 <TD>{name}</TD>
               </TR>
             )
           })}
-          <TR>
-            <TD>{calculateTotal()} g</TD>
-            <TD>{calculatePercentage()}%</TD>
-            <TD></TD>
-          </TR>
         </tbody>
       </Table>
     </div>
   )
 }
 
-export default FlourDisplay;
+export default Ingredients;

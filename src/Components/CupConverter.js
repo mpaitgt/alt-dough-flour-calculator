@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/react';
 
 const Note = styled.div`
   background: white;
-  width: auto;
+  width: 100%;
   padding: 8px 12px;
   box-shadow: 5px 5px 12px -10px rgba(0,0,0,0.75);
   text-align: center;
@@ -21,7 +21,7 @@ function CupConverter() {
   const [cup, setCup] = useState(1);
 
   const calculateGrams = () => {
-    return cup * 122;
+    return cup * 140;
   }
 
   return (

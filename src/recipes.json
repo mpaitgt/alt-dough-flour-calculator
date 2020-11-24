@@ -3,7 +3,7 @@
     {
       "label": "Gluten-Free Yeast-Raised Donuts",
       "id": 1001,
-      "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/6/19/1/FN_Gluten-Free-Sugar-Glazed-Doughnuts_s4x3.jpg.rend.hgtvcom.826.620.suffix/1403627915220.jpeg",
+      "image": "./Images/yeast-raised-donuts.jpg",
       "ingredients": [
         {
           "text": "all-purpose gluten-free flour",
@@ -95,64 +95,50 @@
       "yield": 16
     },
     {
-      "label": "Gluten-Free Sour Cream Donuts",
+      "label": "Gluten Free Cupcakes",
       "id": 1002,
-      "image": "https://simplygluten-free.com/wp-content/uploads/2017/02/sourdough-donuts-glutenfree.png",
+      "image": "./Images/cupcakes.jpg",
       "ingredients": [
         {
-          "text": "all-purpose gluten-free flour",
-          "amount": 350,
+          "text": "gluten-free cake flour",
+          "amount": 210,
           "measurement": "grams",
-          "alt": "2 1/2 cups",
-          "note": "plus more for sprinkling"
-        },
-        {
-          "text": "xanthan gum",
-          "amount": 1.5,
-          "measurement": "tsp",
-          "alt": null,
-          "note": "omit if your blend already contains it"
-        },
-        {
-          "text": "kosher salt",
-          "amount": 0.5,
-          "measurement": "tsp",
-          "alt": null,
+          "alt": "1 1/2 cups",
           "note": null
         },
         {
-          "text": "cream of tartar",
-          "amount": 0.25,
+          "text": "unsalted butter",
+          "amount": 8,
+          "measurement": "T",
+          "alt": null,
+          "note": "room temperature"
+        },
+        {
+          "text": "baking powder",
+          "amount": 1,
           "measurement": "tsp",
           "alt": null,
           "note": null
         },
         {
           "text": "baking soda",
-          "amount": 0.25,
+          "amount": 0.5,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
+        },
+        {
+          "text": "salt",
+          "amount": 0.5,
           "measurement": "tsp",
           "alt": null,
           "note": null
         },
         {
           "text": "granulated sugar",
-          "amount": 50,
+          "amount": 200,
           "measurement": "grams",
-          "alt": "1/4 cup",
-          "note": null
-        },
-        {
-          "text": "instant yeast",
-          "amount": 8,
-          "measurement": "grams",
-          "alt": "2 1/2 tsp",
-          "note": null
-        },
-        {
-          "text": "finely-ground nutmeg",
-          "amount": 0.5,
-          "measurement": "tsp",
-          "alt": "2 1/2 tsp",
+          "alt": "1 cup",
           "note": null
         },
         {
@@ -171,115 +157,21 @@
         },
         {
           "text": "milk",
-          "amount": 9,
+          "amount": 5.33,
           "measurement": "fluid oz",
-          "alt": "1 cup + 2 T",
+          "alt": "2/3 cups",
           "note": "at room temperature"
         },
         {
-          "text": "unsalted butter",
-          "amount": 56,
-          "measurement": "grams",
-          "alt": "4 T",
-          "note": "melted and cooled"
+          "text": "vanilla extract",
+          "amount": 2,
+          "measurement": "tsp",
+          "alt": null,
+          "note": null
         }
       ],
-      "prep_time": "40 minutes",
-      "cook_type": "fried",
-      "yield": 18
-    },
-    {
-      "label": "Gluten-Free Pancakes",
-      "id": 1003,
-      "image": "https://www.kingarthurflour.com/sites/default/files/recipe_legacy/5043-3-large.jpg",
-      "ingredients": [
-        {
-          "text": "all-purpose gluten-free flour",
-          "amount": 350,
-          "measurement": "grams",
-          "alt": "2 1/2 cups",
-          "note": "plus more for sprinkling"
-        },
-        {
-          "text": "xanthan gum",
-          "amount": 1.5,
-          "measurement": "tsp",
-          "alt": null,
-          "note": "omit if your blend already contains it"
-        },
-        {
-          "text": "kosher salt",
-          "amount": 0.5,
-          "measurement": "tsp",
-          "alt": null,
-          "note": null
-        },
-        {
-          "text": "cream of tartar",
-          "amount": 0.25,
-          "measurement": "tsp",
-          "alt": null,
-          "note": null
-        },
-        {
-          "text": "baking soda",
-          "amount": 0.25,
-          "measurement": "tsp",
-          "alt": null,
-          "note": null
-        },
-        {
-          "text": "granulated sugar",
-          "amount": 50,
-          "measurement": "grams",
-          "alt": "1/4 cup",
-          "note": null
-        },
-        {
-          "text": "instant yeast",
-          "amount": 8,
-          "measurement": "grams",
-          "alt": "2 1/2 tsp",
-          "note": null
-        },
-        {
-          "text": "finely-ground nutmeg",
-          "amount": 0.5,
-          "measurement": "tsp",
-          "alt": "2 1/2 tsp",
-          "note": null
-        },
-        {
-          "text": "egg",
-          "amount": 1,
-          "measurement": "egg",
-          "alt": null,
-          "note": null
-        },
-        {
-          "text": "egg white",
-          "amount": 1,
-          "measurement": "egg white",
-          "alt": null,
-          "note": null
-        },
-        {
-          "text": "milk",
-          "amount": 9,
-          "measurement": "fluid oz",
-          "alt": "1 cup + 2 T",
-          "note": "at room temperature"
-        },
-        {
-          "text": "unsalted butter",
-          "amount": 56,
-          "measurement": "grams",
-          "alt": "4 T",
-          "note": "melted and cooled"
-        }
-      ],
-      "prep_time": "60 minutes",
-      "cook_type": "stove-top",
+      "prep_time": "30 minutes",
+      "cook_type": "baked",
       "yield": 12
     }
   ]
