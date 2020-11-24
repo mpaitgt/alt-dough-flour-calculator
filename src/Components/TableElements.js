@@ -1,11 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 
 function Table({ children }) {
   const TABLE = styled.table`
-    width: auto;
+    width: 100%;
     margin: 0 auto;
+    border-collapse:collapse;
+    height: 100%;
   `;
   return <TABLE>{children}</TABLE>;
 }
@@ -13,31 +15,48 @@ function Table({ children }) {
 function TH({ children }) {
   const HEADER = styled.th`
     font-size: 26px;
-    color: var(--purple);  
-    padding: 0px 10px;
+    background: var(--green);
+    color: var(--offwhite);
+    border: 5px solid var(--green); 
   `;
   return <HEADER>{children}</HEADER>
 }
 
 function TR({ children }) {
   const ROW = styled.tr`
-    margin: 20px 0px;
-    // &:nth-child(1n) {
-    //   background: #000000;
-    // }
-    // &:nth-child(2n) {
-    //   background: #f1f1f1;
-    // }
+    color: var(--purple);
+    border: none;
+    border-bottom: 1px solid var(--green);
+    &:nth-child(even) {
+      background: var(--offwhite);
+    }
+    &:nth-child(odd) {
+      background: var(--offwhite2);
+    }
   `;
   return <ROW>{children}</ROW>;
 }
 
 function TD({ children }) {
   const DATA = styled.td`
-    padding: 5px 50px;
+    font-family: 'Chewy', cursive;
     font-size: 32px;
+    color: var(--purple);
+    text-align: left;
+    padding: 10px 0;
   `;
   return <DATA>{children}</DATA>;
 }
 
-export { Table, TR, TD, TH };
+function Amount({ children }) {
+  const DATA = styled.td`
+    font-family: 'Chewy', cursive;
+    font-size: 32px;
+    color: var(--purple);
+    text-align: right;
+    padding-right: 2rem;
+  `;
+  return <DATA>{children}</DATA>;
+}
+
+export { Table, TR, TD, TH, Amount };
