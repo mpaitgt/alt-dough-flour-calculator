@@ -1,5 +1,11 @@
 import React from 'react';
-import {Table, TR, TD, TH, Amount} from './TableElements';
+import {Table, TR, TD, Amount} from './TableElements';
+import styled from '@emotion/styled';
+
+const Container = styled.div`
+  box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
+  z-index: 2;
+`;
 
 function Ingredients({ blend, input }) {
 
@@ -8,31 +14,24 @@ function Ingredients({ blend, input }) {
     if (Number.isInteger(num)) {
       return num;
     } else {
-      return parseFloat(num).toFixed(1);
+      // return parseFloat(num).toFixed(1);
+      return parseInt(num);
     }
   }
 
-  const calculatePercentage = () => {
-    return blend.ingredients.reduce((acc, current, index, array) => {
-      let total = acc += current.percentage;
-      return total;
-    }, 0)
-  }
-
-  const calculateTotal = () => {
-    let num = blend.ingredients.reduce((acc, current, index, array) => {
-      let total = acc += ((input * (current.percentage / 100)));
-      return total;
-    }, 0)
-    if (Number.isInteger(num)) {
-      return num;
-    } else {
-      return parseFloat(num).toFixed(1);
+  const generateBlankRows = (blend) => {
+    if (blend.ingredients.length < 7) {
+      let displayData = [];
+      let autofill = 7 - blend.ingredients.length;
+      for (let i = 1; i <= autofill; i++) {
+        displayData.push(<TR><TD>&nbsp;</TD><TD>&nbsp;</TD></TR>);
+      }
+      return displayData;
     }
   }
 
   return (
-    <div>
+    <Container>
       <Table>
         <tbody>
           {blend.ingredients.map((ingredient, index) => {
@@ -40,14 +39,14 @@ function Ingredients({ blend, input }) {
             return (
               <TR key={index}>
                 <Amount>{calculateAmt(input, percentage)} g</Amount>
-                {/* <TD>{percentage} %</TD> */}
                 <TD>{name}</TD>
               </TR>
             )
           })}
+          {generateBlankRows(blend)}
         </tbody>
       </Table>
-    </div>
+    </Container>
   )
 }
 

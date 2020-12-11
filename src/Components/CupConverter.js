@@ -1,12 +1,9 @@
 import React, {useState} from 'react';
-import styled from '@emotion/react';
+import styled from '@emotion/styled';
 
 const Note = styled.div`
-  background: white;
   width: 100%;
-  padding: 8px 12px;
-  box-shadow: 5px 5px 12px -10px rgba(0,0,0,0.75);
-  text-align: center;
+  text-align: right;
 `;
 
 const Input = styled.input`
@@ -15,9 +12,11 @@ const Input = styled.input`
   text-align: center;
   font-size: 20px;
   border: none;
+  background: transparent;
+  color: inherit;
 `;
 
-function CupConverter() {
+function CupConverter({clickToConvert}) {
   const [cup, setCup] = useState(1);
 
   const calculateGrams = () => {
@@ -26,9 +25,14 @@ function CupConverter() {
 
   return (
     <Note>
-      <h3>Cup Counter</h3>
-      <Input type="text" value={cup} onChange={e => setCup(e.target.value)}/>
-      cup = <span>{calculateGrams()}</span> g
+      <p>Cup Counter</p>
+      <div>
+        <Input type="text" value={cup} onChange={e => setCup(e.target.value)}/>
+        cup = <span>{calculateGrams()}</span> g
+      </div>
+      <button onClick={() => clickToConvert(calculateGrams())}>
+        Click to convert
+      </button>
     </Note>
   )
 }

@@ -43,7 +43,7 @@ function TD({ children }) {
     font-size: 32px;
     color: var(--purple);
     text-align: left;
-    padding: 10px 0;
+    padding: 16px 0;
   `;
   return <DATA>{children}</DATA>;
 }

@@ -1,18 +1,20 @@
 import React from 'react';
 import logo from '../Images/altdough15.jpg';
-import {css} from '@emotion/react/macro';
+import styled from '@emotion/styled';
+
+const Image = styled.img`
+  border-radius: 50%;
+  /* box-shadow: 0px 100px 24px 0px rgba(0,0,0,0.1); */
+  position: absolute;
+  top: 0;
+`;
 
 const Logo = ({width}) => {
   return (
-    <img 
+    <Image 
       src={logo} 
       alt="Alternative Dough logo"
-      width={width}  
-      css={css`
-        border: 1px solid black;
-        border-radius: 50%;
-        box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
-      `}
+      width={width}
     />
   )
 }

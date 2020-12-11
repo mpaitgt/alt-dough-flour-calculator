@@ -2,40 +2,53 @@ import React from 'react';
 import {css} from '@emotion/react';
 import styled from '@emotion/styled';
 import UserInput from './UserInput';
-import Logo from './Logo';
+
 const Headerrr = styled.div`
-   display: flex;
-      justify-content: space-around;
-      align-items: center;
-      font-family: 'Chewy', cursive;
+  display: flex;
+  background: var(--green);
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  font-family: 'Chewy', cursive;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
+`;
+const Burger = styled.div`
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
 `;
 
 const Line = styled.div`
-  height: 3px;
+  height: 6px;
   background: var(--offwhite);
   width: 100%;
-  margin: 9px;
+  margin: 9px 0;
   border-radius: 5px;
 `;
 
-function Header({ input, setInput, flours, selectBlend, handleMenuToggle }) {
+const MenuIcon = styled.div`
+  font-size: 62px;
+  transform: ${props => props.menuVisible ? 'rotate(0deg)' : 'rotate(90deg)'};
+  cursor: pointer;
+  transition: transform 0.25s;
+`;
+
+function Header({ input, setInput, flours, selectBlend, handleMenuToggle, menuVisible }) {
   return (
     <Headerrr>
-      <Logo width="80px" />
       <UserInput input={input} setInput={setInput}  />
-      <div 
+      {/* <Burger 
         onClick={handleMenuToggle}
-        css={css`
-          width: 40px;
-          height: 40px;
-          background: red;
-          cursor: pointer;
-        `}
       >
         <Line />
         <Line />
         <Line />
-      </div>
+      </Burger> */}
+      <MenuIcon menuVisible={menuVisible} onClick={handleMenuToggle}>
+        {'>'}
+      </MenuIcon>
     </Headerrr>
   )
 }

@@ -4,21 +4,23 @@ import styled from '@emotion/styled';
 const Input = styled.input`
   text-align: center;
   font-family: inherit;
-  font-size: 52px;
-  width: 100px;
+  font-size: 42px;
+  width: 80px;
   background: transparent;
   color: inherit;
   border: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 `;
 
 const Flex = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   font-family: 'Chewy', cursive;
-  padding: 1rem 0;
+  padding: 10px 0;
 `;
 
 function UserInput({ input, setInput }) {

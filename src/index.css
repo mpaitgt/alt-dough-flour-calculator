@@ -17,7 +17,7 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
   background: var(--offwhite);
-  color: var(--darkgray);
+  color: var(--offwhite);
   margin: 0 auto;
   text-align: center;
   -webkit-font-smoothing: antialiased;
