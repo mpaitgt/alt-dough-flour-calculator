@@ -5,7 +5,7 @@ const Input = styled.input`
   text-align: center;
   font-family: inherit;
   font-size: 42px;
-  width: 80px;
+  width: 100px;
   background: transparent;
   color: inherit;
   border: none;
@@ -23,14 +23,21 @@ const Flex = styled.div`
   padding: 10px 0;
 `;
 
+const InputLockUp = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
 function UserInput({ input, setInput }) {
   return (
     <Flex>
       <label>How much flour do you need?</label>
-      <div>
+      <InputLockUp>
         <Input type="text" value={input} onChange={setInput}/>
         <span>g</span>
-      </div>
+      </InputLockUp>
     </Flex>
   )
 }

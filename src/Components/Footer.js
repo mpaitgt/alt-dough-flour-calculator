@@ -14,7 +14,8 @@ const Container = styled.div`
   border-radius: 0 0 20px 20px;
   position: relative;
   box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
-  @media (max-width: 934px) {
+  z-index: 90;
+  @media (max-width: 600px) {
     border-radius: 0;
     min-height: 160px;
     margin-bottom: 0;

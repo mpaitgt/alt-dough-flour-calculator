@@ -6,12 +6,12 @@ import CupConverter from '../Components/CupConverter';
 const MenuContainer = styled.div`
   position: absolute;
   top: 0%;
-  bottom: 10%;
+  bottom: 15%;
   right: 0;
   left: 0;
   background: var(--green);
   width: 260px;
-  height: 70%;
+  height: 60%;
   border-radius: 20px;
   transition: transform 0.25s;
   transform: ${props => props.menuVisible ? 'translateX(260px)' : 'translateX(0px)'};
@@ -45,7 +45,7 @@ const Item = styled.li`
     color: var(--purple);
   }
   @media (max-width: 934px) {
-    text-align: center;
+    text-align: left;
   }
 `;
 

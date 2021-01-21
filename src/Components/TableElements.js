@@ -43,7 +43,7 @@ function TD({ children }) {
     font-size: 32px;
     color: var(--purple);
     text-align: left;
-    padding: 16px 0;
+    padding: 12px 0;
     @media (max-width: 934px) {
       font-size: 28px;
     }

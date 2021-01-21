@@ -21,8 +21,9 @@ class Home extends React.Component {
   }
 
   clickToConvert = (inGrams) => {
-    this.setState(() => ({
-      input: inGrams
+    this.setState((prevState) => ({
+      input: inGrams,
+      menuVisible: !prevState.menuVisible
     }))
   }
 

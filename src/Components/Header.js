@@ -1,5 +1,4 @@
 import React from 'react';
-import {css} from '@emotion/react';
 import styled from '@emotion/styled';
 import UserInput from './UserInput';
 
@@ -12,18 +11,21 @@ const Headerrr = styled.div`
   font-family: 'Chewy', cursive;
   height: 100%;
   border-radius: 20px 20px 0 0;
+  z-index: 90;
   box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
   @media (max-width: 600px) {
+    margin-top: 2rem;
     border-radius: 0;
   }
 `;
 
 const MenuIcon = styled.div`
-  font-size: 62px;
+  font-size: 32px;
   transform: ${props => props.menuVisible ? 'rotate(0deg)' : 'rotate(90deg)'};
   cursor: pointer;
   transform-origin: center;
   transition: transform 0.25s;
+  font-family: 'Nanum Gothic', sans-serif;
   @media (max-width: 934px) {
     transform: ${props => props.menuVisible ? 'rotate(180deg)' : 'rotate(90deg)'};
   }
