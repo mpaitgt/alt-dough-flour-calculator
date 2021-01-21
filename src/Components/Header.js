@@ -13,39 +13,26 @@ const Headerrr = styled.div`
   height: 100%;
   border-radius: 20px 20px 0 0;
   box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
-`;
-const Burger = styled.div`
-  width: 50px;
-  height: 40px;
-  cursor: pointer;
-`;
-
-const Line = styled.div`
-  height: 6px;
-  background: var(--offwhite);
-  width: 100%;
-  margin: 9px 0;
-  border-radius: 5px;
+  @media (max-width: 600px) {
+    border-radius: 0;
+  }
 `;
 
 const MenuIcon = styled.div`
   font-size: 62px;
   transform: ${props => props.menuVisible ? 'rotate(0deg)' : 'rotate(90deg)'};
   cursor: pointer;
+  transform-origin: center;
   transition: transform 0.25s;
+  @media (max-width: 934px) {
+    transform: ${props => props.menuVisible ? 'rotate(180deg)' : 'rotate(90deg)'};
+  }
 `;
 
 function Header({ input, setInput, flours, selectBlend, handleMenuToggle, menuVisible }) {
   return (
     <Headerrr>
       <UserInput input={input} setInput={setInput}  />
-      {/* <Burger 
-        onClick={handleMenuToggle}
-      >
-        <Line />
-        <Line />
-        <Line />
-      </Burger> */}
       <MenuIcon menuVisible={menuVisible} onClick={handleMenuToggle}>
         {'>'}
       </MenuIcon>

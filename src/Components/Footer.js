@@ -7,7 +7,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100%; */
   flex-grow: 1;
   margin-bottom: 2rem;
   min-height: 100px;
@@ -15,12 +14,17 @@ const Container = styled.div`
   border-radius: 0 0 20px 20px;
   position: relative;
   box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
+  @media (max-width: 934px) {
+    border-radius: 0;
+    min-height: 160px;
+    margin-bottom: 0;
+  }
 `;
 
 const Footer = () => {
   return (
     <Container>
-      <Logo width="200px" />
+      <Logo width="160px" />
     </Container>
   )
 }

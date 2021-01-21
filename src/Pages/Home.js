@@ -8,18 +8,10 @@ import Menu from '../Components/Menu';
 
 class Home extends React.Component {
   state = {
-    menuVisible: true,
+    menuVisible: false,
     input: 140,
     blend: flours.flours[0]
   };
-
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     this.setState(prevState => ({
-  //       menuVisible: !prevState.menuVisible
-  //     }))
-  //   }, 2000);
-  // }
 
   handleChange = (e) => {
     const {value} = e.target;
@@ -63,15 +55,14 @@ class Home extends React.Component {
             input={input} 
           />
           <Footer />
-          <Menu 
-            flours={flours} 
-            stateBlend={this.state.blend} 
-            selectBlend={this.selectBlend} 
-            menuVisible={menuVisible} 
-            clickToConvert={this.clickToConvert}
-          />
         </Container>
-        
+        <Menu 
+          flours={flours} 
+          stateBlend={this.state.blend} 
+          selectBlend={this.selectBlend} 
+          menuVisible={menuVisible} 
+          clickToConvert={this.clickToConvert}
+        />
       </div>
     )
   }

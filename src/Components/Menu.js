@@ -5,21 +5,33 @@ import CupConverter from '../Components/CupConverter';
 
 const MenuContainer = styled.div`
   position: absolute;
-  top: 5%;
+  top: 0%;
   bottom: 10%;
   right: 0;
+  left: 0;
   background: var(--green);
   width: 260px;
-  border-radius: 0 20px 20px 0;
+  height: 70%;
+  border-radius: 20px;
   transition: transform 0.25s;
-  z-index: -1;
-  transform: ${props => props.menuVisible ? 'translateX(100%)' : 'translateX(0%)'};
-  margin: 0 auto;
+  transform: ${props => props.menuVisible ? 'translateX(260px)' : 'translateX(0px)'};
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
   padding: 20px;
+  @media (max-width: 934px) {
+    transform: ${props => props.menuVisible ? 'translateX(0%)' : 'translateX(-200%)'};
+    z-index: 99;
+    border-radius: 0px;
+    box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
+    align-items: center;
+    height: 100%;
+    left: 0;
+    right: auto;
+    bottom: 0;
+  }
 `;
 
 const Item = styled.li`
@@ -32,16 +44,16 @@ const Item = styled.li`
   &:hover {
     color: var(--purple);
   }
+  @media (max-width: 934px) {
+    text-align: center;
+  }
 `;
 
 const List = styled.ul`
-list-style: none;
-
-
-
+  list-style: none;
 `;
 
-function Menu({ stateBlend, flours, selectBlend, menuVisible, clickToConvert }) {
+function Menu({ stateBlend, flours, selectBlend, menuVisible, clickToConvert  }) {
   return (
     <MenuContainer menuVisible={menuVisible}>
       <List>

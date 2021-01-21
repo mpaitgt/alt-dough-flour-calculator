@@ -44,6 +44,9 @@ function TD({ children }) {
     color: var(--purple);
     text-align: left;
     padding: 16px 0;
+    @media (max-width: 934px) {
+      font-size: 28px;
+    }
   `;
   return <DATA>{children}</DATA>;
 }
@@ -55,6 +58,9 @@ function Amount({ children }) {
     color: var(--purple);
     text-align: right;
     padding-right: 2rem;
+    @media (max-width: 934px) {
+      font-size: 28px;
+    }
   `;
   return <DATA>{children}</DATA>;
 }

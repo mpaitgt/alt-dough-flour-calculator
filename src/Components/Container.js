@@ -10,7 +10,14 @@ const CONTAINER = styled.div`
   position: relative;
   z-index: 99;
   transition: transform 0.25s;
-  transform: ${props => props.menuVisible ? 'translateX(-20%)' : 'translateX(0%)'};
+  transform: ${props => props.menuVisible ? 'translateX(-140px)' : 'translateX(0px)'};
+  @media (max-width: 934px) {
+    transform: translateX(0px);
+  }
+  @media (max-width: 600px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 
 function Container(props) {

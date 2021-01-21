@@ -1,19 +1,25 @@
 import React, {useState} from 'react';
 import styled from '@emotion/styled';
+import ConvertBtn from './ConvertBtn';
 
 const Note = styled.div`
   width: 100%;
   text-align: right;
+  font-family: 'Chewy', cursive;
+  color: white;
+  font-size: 24px;
 `;
 
 const Input = styled.input`
   width: 50px;
   height: 50px;
   text-align: center;
-  font-size: 20px;
+  font-size: inherit;
   border: none;
   background: transparent;
   color: inherit;
+  font-family: inherit;
+  outline: none;
 `;
 
 function CupConverter({clickToConvert}) {
@@ -30,9 +36,7 @@ function CupConverter({clickToConvert}) {
         <Input type="text" value={cup} onChange={e => setCup(e.target.value)}/>
         cup = <span>{calculateGrams()}</span> g
       </div>
-      <button onClick={() => clickToConvert(calculateGrams())}>
-        Click to convert
-      </button>
+      <ConvertBtn onClick={() => clickToConvert(calculateGrams())} />
     </Note>
   )
 }
