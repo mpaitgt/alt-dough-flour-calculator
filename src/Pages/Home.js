@@ -5,6 +5,7 @@ import Ingredients from '../Components/Ingredients';
 import Footer from '../Components/Footer';
 import flours from '../flours.json';
 import Menu from '../Components/Menu';
+import Signature from '../Components/Signature';
 
 class Home extends React.Component {
   state = {
@@ -64,6 +65,7 @@ class Home extends React.Component {
           menuVisible={menuVisible} 
           clickToConvert={this.clickToConvert}
         />
+        <Signature />
       </div>
     )
   }

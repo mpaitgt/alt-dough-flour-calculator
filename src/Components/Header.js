@@ -14,7 +14,6 @@ const Headerrr = styled.div`
   z-index: 90;
   box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.1);
   @media (max-width: 600px) {
-    margin-top: 2rem;
     border-radius: 0;
   }
 `;
