@@ -6,7 +6,7 @@ import CupConverter from '../Components/CupConverter';
 const MenuContainer = styled.div`
   position: absolute;
   top: 0%;
-  bottom: 15%;
+  bottom: 21%;
   right: 0;
   left: 0;
   background: var(--green);
